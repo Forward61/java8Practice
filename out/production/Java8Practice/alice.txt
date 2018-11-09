@@ -1,0 +1,108 @@
+Skip to content
+
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @Forward61 Sign out
+From setup to optimization, learn how to use GitHub to get the job done.
+Featured
+Whitepaper
+Secure Software Development in the Financial Services Industry eBook →
+Secure development doesn’t have to be a barrier to collaboration or innovation.
+
+Whitepaper
+Development Workflows for Data Scientists →
+GitHub partnered with O’Reilly Media to examine how data science and analytics teams improve the way they define, enf...
+
+Webcast
+Organizing Work with GitHub →
+Your team works better when your projects are organized. That's why we're sharing some organizational tips we've pick...
+
+Webcast
+Introduction to open source security tools →
+In this session, we will discuss the fundamentals of building successful open source security projects on GitHub.
+
+Latest resources
+Webcast
+The Check-In →
+Welcome to The Check-In webcast, our quarterly round-up of what’s new at GitHub for our business customers. We couldn...
+October 25, 2018
+Webcast
+Scaling DevOps for Enterprises with GitHub and CloudBees →
+During this webinar, Cojan van Ballegooijen, Solutions Architect at CloudBees, and Bas Peters, Solutions Engineer at ...
+September 27, 2018
+Whitepaper
+Secure Software Development in the Financial Services Industry eBook →
+Secure development doesn’t have to be a barrier to collaboration or innovation.
+August 07, 2018
+Video
+Creating engineering innovation across autonomous and traditional lines →
+Manufacturers, OEM’s, and suppliers must simultaneously deliver autonomous vehicles and incremental innovation in tra...
+June 28, 2018
+Webcast
+GitHub for Beginners (EMEA) →
+In this webcast, we will discuss the basics of using Git and GitHub and answer the question "What is GitHub?". This w...
+May 29, 2018
+Webcast
+GitHub for Beginners →
+In this webcast, we will discuss the basics of using Git and GitHub and answer the question "What is GitHub?". This w...
+May 29, 2018
+Webcast
+How GitHub is using data science →
+In this third webinar in the Data Science Series, we have a conversation with the GitHub data science team to learn m...
+May 14, 2018
+Webcast
+Conversation with Pirelli →
+Join Bas Peters, Solutions Engineer at GitHub for a 30-minute webcast to discuss data science and analytics within Pi...
+March 22, 2018
+Webcast
+GitHub for Beginners →
+In this webcast, we will discuss the basics of using Git and GitHub and answer the question "What is GitHub?". This w...
+February 26, 2018
+Webcast
+GitHub for data scientists →
+The field of data science has seen enormous growth over the last few years. Organizations increasingly leverage data ...
+February 21, 2018
+Webcast
+Managing your projects in GitHub →
+How to organise, manage and track the progress of your projects with GitHub, using features as milestones, labels, is...
+February 15, 2018
+Webcast
+Code Maintenance with GitHub and Sentry →
+Join GitHub Trainer Eric Hollenberry and Sentry Developer Advocate Chloe Condon as they configure in-depth code monit...
+February 12, 2018 See all resources →
+Product
+Features
+Security
+Business
+Case studies
+Pricing
+Resources
+Platform
+Developer API
+Partners
+Atom
+Electron
+GitHub Desktop
+Support
+Help
+Community Forum
+Training
+Status
+Contact GitHub
+Company
+About
+Blog
+Careers
+Press
+Shop
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Press h to open a hovercard with more details.
+Support us  •  Feedback?
+Close once. Disable via Memex icon in the extension toolbar.
+

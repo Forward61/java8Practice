@@ -1,3 +1,6 @@
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -17,7 +20,9 @@ public class Main {
                 count++;
         }
         System.out.println("-----------Test-----------count值=" + count + "," + "当前类=.()");
-        
+
+
+        //Stream练习
         long countLong = words.stream().filter(w->w.length()>10).count();
         System.out.println("-----------Test-----------countLong值=" + countLong + "," + "当前类=.()");
 
@@ -26,7 +31,10 @@ public class Main {
 
         Stream<String> uniqueWords = Stream.of("merrilly","merrilly","merrilly","goo").distinct();
         uniqueWords.forEach(System.out::println);
-        
+
+
+
+
         List<String> name1 = new ArrayList<String>();
         name1.add("google");
         name1.add("Taobao");
@@ -60,6 +68,14 @@ public class Main {
         };
         System.out.println("-----------Test-----------stringComparator值=" + stringComparator.compare("12","2")+ "," + "当前类=.()");
         Comparator<String> stringComparator1 = (String fir, String sec) -> Integer.compare(fir.length(), sec.length());
+
+        EventHandler<ActionEvent> listener = event -> System.out.println("Thanks for clicking");//无须（event）->或（ActionEvent event）->
+
+        String [] strarr={"a","az","ss"};
+        //函数式接口
+        Arrays.sort(strarr, (String firstr, String secondstr) -> {
+            return firstr.compareTo(secondstr);
+        };
         int [] nums = {2,7,9,11,66};
             int [] results = twoSum(nums,9);
             for (int i = 0 ;i<results.length;i++){

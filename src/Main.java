@@ -1,6 +1,7 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
+import javax.swing.text.html.Option;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -16,8 +17,9 @@ public class Main {
         List<String> words = Arrays.asList(contents.split("[\\P{L}]+"));
         int count = 0;
         for (String word : words){
-            if (word.length()>10)
+            if (word.length()>10) {
                 count++;
+            }
         }
         System.out.println("-----------Test-----------count值=" + count + "," + "当前类=.()");
 
@@ -31,6 +33,22 @@ public class Main {
 
         Stream<String> uniqueWords = Stream.of("merrilly","merrilly","merrilly","goo").distinct();
         uniqueWords.forEach(System.out::println);
+
+        Stream<String > song = Stream.of("gently", "down", "the", "stream");
+
+
+        Stream<String> lowcaseWords = words.stream().map(String::toLowerCase);
+
+        //optional类型
+
+        Integer value1 = null;
+        Integer value2 = new Integer(10);
+
+        // Optional.ofNullable - 允许传递为 null 参数
+        Optional<Integer> a = Optional.ofNullable(value1);
+        int aInt = a.orElse(8);
+        System.out.println("-----------Test-----------a值=" +a.orElse(6) + "," + "当前类=.()");
+
 
 
 
@@ -60,11 +78,13 @@ public class Main {
 
         testRunnable();
         Comparator<String> stringComparator = ( first,  second) -> {
-            if (first.length() < second.length())
+            if (first.length() < second.length()) {
                 return -1;
-            else if (first.length() > second.length())
+            }
+            else if (first.length() > second.length()) {
                 return 1;
-            else return 0;
+            }
+            else {return 0;}
         };
         System.out.println("-----------Test-----------stringComparator值=" + stringComparator.compare("12","2")+ "," + "当前类=.()");
         Comparator<String> stringComparator1 = (String fir, String sec) -> Integer.compare(fir.length(), sec.length());
@@ -75,7 +95,7 @@ public class Main {
         //函数式接口
         Arrays.sort(strarr, (String firstr, String secondstr) -> {
             return firstr.compareTo(secondstr);
-        };
+        });
         int [] nums = {2,7,9,11,66};
             int [] results = twoSum(nums,9);
             for (int i = 0 ;i<results.length;i++){
@@ -115,12 +135,18 @@ public class Main {
     public static void filter(String name, Predicate<String> condition){
         if(condition.test(name)){
             System.out.println("-----------Test-----------name值长度为4=" + "," + "当前类=.()");
-        }else
-            System.out.println("-----------Test-----------name长度不为4值="  + "," + "当前类=.()");
+        }else {
+            System.out.println("-----------Test-----------name长度不为4值=" + "," + "当前类=.()");
+        }
     }
     //Runnable
     public static void testRunnable(){
         Thread thread = new Thread(()->System.out.println("-----------Test-----------Runnable start值="   + "," + "当前类=.()"));
         thread.start();
+    }
+
+    //创建可选值
+    public static Optional<Double> inverse(Double x){
+        return x == 0 ? Optional.empty() : Optional.of(1/x);
     }
 }

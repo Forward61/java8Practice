@@ -2,8 +2,8 @@ package Jedis_Redis;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.JedisShardInfo;
+
 
 /**
  * Created by freedom on 2019/3/17.
@@ -67,6 +67,7 @@ public  class Jedis_Conn_Redis {
             }
         } catch (Exception e) {
             e.printStackTrace();
+
             return null;
         }
     }

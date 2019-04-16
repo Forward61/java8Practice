@@ -1,7 +1,6 @@
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
-import javax.swing.text.html.Option;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;

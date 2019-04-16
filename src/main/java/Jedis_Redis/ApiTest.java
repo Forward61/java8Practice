@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by freedom on 2019/3/27.
@@ -24,12 +26,21 @@ public class ApiTest {
     private static final String POST_PARAMS = "userName=Pankaj";
 
     public static void main(String[] args) throws IOException {
+        Map<String,String> hashmap =new HashMap<String,String>();
+        hashmap.put("1","11");
+        hashmap.put("2","22");
+        for (Map.Entry<String,String> entry:hashmap.entrySet()){
+            String appFieldDefId = entry.getKey();
+            String value = entry.getValue();
+            System.out.println(appFieldDefId + " value " + value);
+        }
 
-        sendGET();
-        System.out.println("GET DONE");
-        sendPOST();
-        System.out.println("POST DONE");
+//        sendGET();
+//        System.out.println("GET DONE");
+//        sendPOST();
+//        System.out.println("POST DONE");
     }
+
 
     @Test
     private static void sendGET() throws IOException {

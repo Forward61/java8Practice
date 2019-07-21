@@ -10,7 +10,7 @@ public class Tokenizer {
     private Map<Character, Object> dictionary;
 
     public  Tokenizer(String dictonaryFilePath) throws IOException {
-        dictionary = new TreeMap<>();
+        dictionary = new TreeMap<Character, Object>();
 
         this.loadDictionary(dictonaryFilePath);
     }
@@ -50,7 +50,7 @@ public class Tokenizer {
             return null;
         }
 
-        List<String> tokens = new ArrayList<>();
+        List<String> tokens = new ArrayList<String>();
         char c;
         for (int i = 0;i <text.length();){
             StringBuilder token = new StringBuilder();
@@ -92,7 +92,7 @@ public class Tokenizer {
         Tokenizer tk = new Tokenizer(f.getPath());
 //        Tokenizer tk = new Tokenizer(Tokenizer.class.getResource("Users/ningli/Java8Practice/src/main/java/d.txt").getPath());
 
-        List<String> tokens = tk.participle("藏三说的确实在理，哈哈");
+        List<String> tokens = tk.participle("张三说的确实在理，哈哈");
         for (String s:tokens) {
             System.out.println(s);
         }
